@@ -1,28 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 nav {
-    background-color: darkblue;
+    background-color: steelblue;
     padding: 10px;
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 15px;
 }
 
 h1 {
-    color: darkblue;
+    color: steelblue;
+    padding: 1rem;
+    margin: 1rem 0 1rem;
 }
 
 main img {
-    width: 150px;
+    width: 160px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
 
 p {
     padding: 0px;
+    margin: 1rem;
 }
 
 main {
@@ -47,5 +64,30 @@ aside img {
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
+    text-align: center;
+}
+
+aside h2 {
+    position: relative;
+    top: 47px;
+    left: 0;
+}
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0/10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
+
+.indent {
+    padding: 2rem;
+}
+
+aside {
+    width: 20em;
     text-align: center;
 }
