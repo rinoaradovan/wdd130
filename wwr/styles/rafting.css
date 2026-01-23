@@ -1,8 +1,7 @@
 :root {
-    --primary-color: #589d84;
+    --primary-color: #437664;
     --secondary-color: #1f3c51;
-    --accent1-color: #e4c269;
-    --accent2-color: #61923b;
+    --accent1-color: #cbaa54;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -66,7 +65,7 @@ h1 {
     opacity: 0.88;
     background-color: var(--primary-color);
     color: #fff;
-    text-shadow: 0 0 4px black;
+    text-shadow: 0 0 3px black;
 }
 
 h2 {
