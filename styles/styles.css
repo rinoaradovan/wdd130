@@ -2,7 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
 
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: auto;
 }
 
 body {
@@ -13,18 +19,30 @@ body {
 nav {
     background-color: steelblue;
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    color: white;
     display: block;
-    padding: 15px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: white;
 }
 
 h1 {
     color: steelblue;
     padding: 1rem;
     margin: 1rem 0 1rem;
+    border-bottom: 1px solid #000;
+}
+
+main h1 {
+    font-size: 30px;
 }
 
 main img {
@@ -42,10 +60,6 @@ p {
     margin: 1rem;
 }
 
-main {
-    max-width: 840px;
-}
-
 aside {
     width: 20rem;
     margin: 1rem;
@@ -57,8 +71,9 @@ aside {
 }
 
 aside img {
-    width: 200px;
+    width: 250px;
     height: auto;
+    border: 3px solid #fff;
 }
 
 footer {
@@ -73,14 +88,38 @@ aside h2 {
     left: 0;
 }
 
+/* Adding on Grid */
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
 /* Class Selectors */
 
 .box {
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0/10%);
-    padding: 1rem;
+    margin: rem;
+    border: 2px solid rgb(0 0 0/10%);
+    padding: 1.2rem;
     background-color: #ddd;
     color: #000;
+}
+
+h2 {
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
 }
 
 .indent {
