@@ -130,6 +130,12 @@ h1 {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     margin: 0.5rem auto;
+
+    background-color: #fff;
+    border: 2px solid var(--primary-color);
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 2px 4px 8px gray;
 }
 
 .container2 img {
@@ -148,6 +154,12 @@ h1 {
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     align-items: start;
+
+    background-color: #fff;
+    border: 2px solid var(--primary-color);
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 2px 4px 8px gray;
 }
 
 .container3 h2 {
