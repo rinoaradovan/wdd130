@@ -23,7 +23,6 @@ header {
     grid-template-columns: 120px 1fr 1fr;
     align-items: center;
     border-bottom: 2px solid #ccc;
-    max-width: 1000px;
 }
 
 header,
@@ -34,14 +33,13 @@ footer {
 }
 
 header img {
-    width: 110%;
+    width: 100%;
     height: auto;
 }
 
 #logo {
-    font-size: 2.3rem;
-    padding: 2%;
-    margin-right: 45px;
+    font-size: 2rem;
+    margin-right: 50px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -136,7 +134,7 @@ h1 {
 
     background-color: #fff;
     border: 2px solid var(--primary-color);
-    padding: 35px;
+    padding: 25px;
     border-radius: 5px;
     box-shadow: 2px 4px 8px gray;
 }
@@ -160,7 +158,7 @@ h1 {
 
     background-color: #fff;
     border: 2px solid var(--primary-color);
-    padding: 35px;
+    padding: 25px;
     border-radius: 5px;
     box-shadow: 2px 4px 8px gray;
 }
