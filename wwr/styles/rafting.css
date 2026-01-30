@@ -28,7 +28,8 @@ header {
 header,
 main,
 footer {
-    width: 840px;
+    width: 90%;
+    max-width: 840px;
     margin: 0 auto;
 }
 
@@ -213,7 +214,7 @@ h1 {
 }
 
 footer {
-    margin-top: 35px;
+    margin-top: 30px;
     background-color: gainsboro;
     display: grid;
     grid-template-columns: 1fr auto;
