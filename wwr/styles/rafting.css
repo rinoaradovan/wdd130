@@ -3,6 +3,7 @@
     --secondary-color: #1f3c51;
     --accent1-color: #e4c269;
     --accent2-color: #61923b;
+    --accent3-color: #c9e2d8;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -31,7 +32,8 @@ header {
 header,
 main,
 footer {
-    width: 850px;
+    width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -41,8 +43,9 @@ header img {
 }
 
 #logo {
-    font-size: 2rem;
+    font-size: 2.3rem;
     margin-right: 30px;
+    letter-spacing: 1.5px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -58,7 +61,6 @@ section,
 article {
     margin: 16px;
     padding: 8px;
-
 }
 
 .navigation {
@@ -76,8 +78,22 @@ article {
     color: navy;
     padding: 10px 20px;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    font-weight: bold;
     white-space: nowrap;
+}
+
+.navigation a:hover {
+    color: var(--accent2-color);
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.navigation a.active {
+    color: var(--accent2-color);
+    border-bottom: 3px solid var(--accent2-color);
+    padding-bottom: 5px;
+    font-weight: bold;
 }
 
 /* Social media container */
@@ -331,7 +347,7 @@ input[type="email"] {
     font-size: 1rem;
     border-radius: 4px;
     border: 2px solid #ccc;
-    max-width: 400px;
+    max-width: 450px;
 }
 
 .form-message textarea {
@@ -381,7 +397,8 @@ input[type="email"] {
 
 .submit-button:hover {
     background: var(--accent2-color);
-    color: #fff
+    color: #fff;
+    transition: 0.3s;
 }
 
 /* Service Section */
@@ -410,7 +427,7 @@ input[type="email"] {
 /* The Individual Card */
 .profile-card {
     background: #fff;
-    border: 2px solid var(--primary-color);
+    border: 3px solid var(--primary-color);
     border-radius: 15px;
     padding: 20px;
     width: 400px;
@@ -433,4 +450,261 @@ input[type="email"] {
 .profile-card p {
     color: #666;
     font-size: 1.1rem;
+}
+
+/* INDEX HTML */
+
+.home-page .hero-container {
+    position: relative;
+    right: 0.8%;
+    width: 101.6%;
+    height: auto;
+    margin: 0px;
+}
+
+.home-page .hero-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.home-page .hero-message {
+    position: absolute;
+    top: 25%;
+    left: 6%;
+    width: 60%;
+}
+
+.home-page .hero-message h1 {
+    position: static;
+    background-color: transparent;
+    color: #fff;
+    font-family: 'Bebas Neue', 'Impact', sans-serif;
+    font-size: 4.3rem;
+    text-shadow: 2px 2px 8px #000;
+    letter-spacing: 3px;
+    text-align: left;
+    opacity: 1;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.home-page .hero-message p {
+    color: #fff;
+    margin: 5px 0px;
+    padding: 0;
+    font-family: var(--body-font);
+    font-size: 2.3rem;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px #000;
+}
+
+/* Newsletter Sign Up */
+
+.home-page .action-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    width: 90%;
+    margin: -100px auto 50px;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background-color: var(--accent3-color);
+}
+
+.home-page .newsletter-box {
+    background-color: #f1f8ee;
+    padding: 25px;
+    text-align: center;
+    border: 6px solid var(--primary-color);
+    box-shadow: 0px 7px 14px rgba(0, 0, 0, 0.4);
+}
+
+.home-page .newsletter-box h2 {
+    color: var(--secondary-color);
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.home-page .form-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.home-page .newsletter-form label {
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-align: right;
+}
+
+.home-page .newsletter-form input {
+    flex: 1;
+    max-width: 350px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+.home-page .subscribe-button {
+    background-color: var(--primary-color);
+    color: white;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.home-page .subscribe-button:hover {
+    background-color: var(--secondary-color);
+}
+
+.home-page .cta-box h2 {
+    margin-bottom: 15px;
+}
+
+.home-page .cta-box {
+    background-color: #f1f8ee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 6px solid var(--primary-color);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.home-page .subscribe-button,
+.home-page .cta-box a {
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    padding: 12px 45px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+    font-size: 1.1rem;
+}
+
+.home-page .subscribe-button:hover,
+.home-page .cta-box a:hover {
+    background-color: var(--accent2-color);
+    color: white;
+}
+
+/* Offers and Purposes */
+
+.home-page .offers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 60px 8%;
+    background-color: #f9f9f9;
+    margin-bottom: 50px;
+}
+
+.home-page .offer-box {
+    background-color: #fff;
+    text-align: center;
+    padding: 0;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.home-page .offer-box:hover {
+    transform: translateY(-10px);
+}
+
+.home-page .offer-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.home-page .offer-box h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    margin: 20px 0 10px;
+    color: var(--primary-color);
+}
+
+.home-page .offer-box p {
+    padding: 0 20px 20px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Discover Nature Container */
+
+.discover-nature {
+    padding: 100px 40px;
+    background-color: var(--accent3-color);
+    display: flex;
+    justify-content: center;
+}
+
+.nature-container {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.nature-container img {
+    width: 70%;
+    height: auto;
+    display: block;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nature-content {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 50%;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    padding: 30px;
+    text-align: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.nature-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+}
+
+.nature-content p {
+    line-height: 1.4;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
+
+.learn-btn {
+    background-color: #f1f8ee;
+    color: #333;
+    padding: 10px 40px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.learn-btn:hover {
+    color: var(--accent2-color);
+    transition: 0.3s;
 }
