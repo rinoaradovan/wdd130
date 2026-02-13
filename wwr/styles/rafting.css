@@ -794,10 +794,7 @@ input[type="email"] {
 }
 
 .book-button a {
-    position: absolute;
-    top: 42%;
-    left: 38%;
-
+    position: static;
     display: inline-block;
     background-color: var(--accent1-color);
     color: white;
@@ -807,6 +804,7 @@ input[type="email"] {
     font-weight: bold;
     border-radius: 4px;
     transition: background 0.3s;
+    white-space: nowrap;
 }
 
 .book-button a:hover {
